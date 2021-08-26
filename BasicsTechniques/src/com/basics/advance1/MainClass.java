@@ -21,5 +21,8 @@ public class MainClass {
 		
 		Map<Employee, Department> empDepMap=new HashMap<>();
 		empDepMap.put(new Employee(1,"e1"), new Department(1, "d1"));
+		empDepMap.put(new Employee(2,"e2"), new Department(1, "d1"));
+
+		
 	}
 }
