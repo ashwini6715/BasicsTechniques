@@ -58,7 +58,8 @@ public class MainClass {
 						.thenComparing(Map.Entry
 								.<Employee, Department>comparingByKey(Comparator.comparing(Employee::getEmapName)).reversed()))
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-		resultMap3.forEach((k, v) -> System.out.println(k.getEmapName() + ":" + v.getDepName()));
+		resultMap3.forEach((k, v) -> System.out.println( v.getDepName()+":"+k.getEmapName()));
+
 
 	}
 }
