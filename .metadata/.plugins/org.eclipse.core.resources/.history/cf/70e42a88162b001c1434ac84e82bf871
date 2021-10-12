@@ -1,0 +1,5 @@
+package com.basics.designPattern.factory;
+
+public class SMSNotification implements Notification{
+
+}
